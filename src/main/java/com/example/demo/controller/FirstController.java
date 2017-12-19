@@ -22,4 +22,16 @@ public class FirstController {
 		}
 		return map;
 	}
+	@RequestMapping("/test2")
+	@ResponseBody
+	public Map<String,Object> test2(){
+		Map<String,Object> map = new HashMap<>();
+		try {
+			System.out.println("test2");
+			map.put("code", 200);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return map;
+	}
 }
